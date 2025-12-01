@@ -558,8 +558,7 @@ cat > /www/bandwidth/index.html << 'EOFHTML'
                 body: JSON.stringify({
                     id: 1,
                     method: 'login',
-                    params: ['root', ''] // Ganti password jika ada
-                })
+                    params: params: ['root', 'indonesia']
             });
             const data = await response.json();
             authToken = data.result;
